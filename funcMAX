@@ -1,0 +1,29 @@
+//C
+#include<stdio.h>
+
+int funcMAX(int a, int b);
+
+int main(void) {
+	int a, b;
+	int result;
+	
+	printf("数字を入力:");
+	scanf_s("%d", &a);
+	printf("数字を入力:");
+	scanf_s("%d", &b);
+
+	result = funcMAX(a, b);
+	printf("max : %d", result);
+
+	return 0;
+}
+
+int funcMAX(int a, int b) {
+	int max;
+	max = a;
+
+	if (max < b) {
+		max = b;
+	}
+	return max;
+}
